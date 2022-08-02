@@ -4,7 +4,8 @@
 @import "vars";
 @import "settings";
 
-
+/*
+Пример - убрать потом
 .header {
   text-align: center;
   & img {
@@ -16,3 +17,190 @@
   margin-top: 50px;
   font-size: 6em;
 }
+*/
+/* Мои стили */
+button {
+  border: none;
+  font: inherit;
+  background: inherit;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: #F8F8F8;
+}
+.page {
+  font-family: 'TT Lakes Regular';
+}
+.header {
+  background-color: #fff;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  /*justify-content: space-around;*/
+  justify-content: space-between;
+  min-height: 88px;
+  margin-right: 16px;
+}
+.header__flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-item--padding-right {
+  padding-right: 16px;
+}
+.header-item--padding-left {
+  padding-left: 16px;
+}
+.header-item--padding-left-big {
+  padding-left: 16px;
+}
+.line {
+  width: 2px;
+  height: 32px;
+  background: #EAEAEA;
+  border-radius: 1px;
+}
+.menu-item {
+  height: 40px;
+  width: 40px;
+}
+.menu-btn {
+  background: url("../img/images/menu.svg");
+}
+.check-repair-status-btn {
+  background: url("../img/images/status.svg");
+}
+.submit{
+  align-self: flex-start;
+}
+.submit-btn {
+  background: url("../img/images/repair.svg");
+}
+.content-header {
+  padding: 24px 12px;
+  background: url("../img/images/highlight.svg") no-repeat 0 16px;
+}
+.title {
+  /* в фигме 28px шрифт - в браузере 16px значит 28/16 = нужное нам значение 1.75 em */
+  font-size: 1.75em;
+}
+.services-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-left: 16px;
+}
+.services-list__item {
+  flex: 0 0 auto;
+  font-size: 1em;
+  color: #7E7E82;
+  padding: 8px 9px 8px 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.2px;
+
+  /* Фича=) бордер в цвет фона, чтобы не было скачка размеров элемента при наведении.
+  Я думала с этим справиться box-sizing: border-box, но почему то нет*/
+  border: 2px solid #F8F8F8;
+  border-radius: 6px;
+}
+.services-list__item:hover {
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.about {
+ /* padding: 24px 16px 16px 16px;*/
+  letter-spacing: 0.2px;
+  padding: 24px 16px 0 16px;
+}
+.about__about-text {
+  /* Вроде я правильно посчитала размеры - почему шрифт не как на макете? */
+  /*
+  font-size: 0.875em;
+  line-height:  1.125em;
+  ладно, укажем в rem....
+  */
+
+  font-size: 0.875rem;
+  line-height:  1.125rem;
+  color: #1B1C21;
+  overflow: hidden;
+}
+.about__read-more-btn {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background: url("../img/images/expand.svg") no-repeat 0 14px;
+  padding: 16px 0 0 32px;
+}
+.about__p--margin {
+  margin-bottom: 1.5rem;
+}
+.content-image {
+  padding-top: 16px;
+  width: 320px;
+}
+.content {
+  /* padding: 32px 25px 40px 24px; */
+}
+.reviews {
+  display: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.2px;
+  padding-left: 32px;
+  padding-top: 14.35px;
+}
+.reviews__btn {
+  color: #7E7E82;
+}
+/* This applies from 0px to 600px */
+@media (max-width: 768px) {
+  .about__text-block {
+      max-height: 90px;
+      overflow: hidden;
+  }
+  .about__p--margin {
+      margin-bottom: 1.95rem;
+  }
+}
+
+/* This applies from 768px onwards */
+@media (min-width: 768px) {
+  .about__text-block {
+      margin-right: 48px;
+      max-width: 312px;
+  }
+  .content--flex {
+      display: flex;
+  }
+  .about__text-block {
+      max-height: 160px;
+  }
+  .content-image {
+      width: 360px;
+  }
+}
+
+/* This applies from 1120 onwards */
+@media (min-width: 1120px) {
+  .about__text-block {
+      max-width: 490px;
+      max-height: 160px;
+  }
+  .reviews {
+      display: block;
+  }
+  .content-image {
+      width: 531.35px;
+  }
+}
+

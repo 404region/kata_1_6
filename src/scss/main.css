@@ -24,12 +24,13 @@ html {
   outline: 2px solid transparent;
 }
 
+/* Мои стили */
 body {
   overflow-anchor: none;
   margin: 0;
   font-family: "Barlow", sans-serif;
   color: #1B1C21;
-  background-color: #F8F8F8;
+  background-color: $background;
   scroll-behavior: smooth;
 }
 
@@ -66,6 +67,7 @@ textarea {
 
 /*Меняем цвет плейсхолдера в инпуте Сафари и Хром*/
 /*Меняем цвет плейсхолдера в инпуте для Мозилы */
+/*
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder,
 input::-moz-placeholder,
@@ -120,5 +122,5 @@ footer {
     padding-left: 15px;
   }
 }
-
+*/
 /*# sourceMappingURL=main.css.map */

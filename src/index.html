@@ -4,14 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-  <title>new site</title>
+  <title>Web Core 1.6</title>
 </head>
 <body>
-  <div class="site-container">
+  <!-- 
+    Webpack не дробит html, поэтому html не разбиваем на компоненты
+  -->
+   <!--
+       Создаем блок для любого независимого блока
+       Создаем блок когда нужно создать служебный блок
+       Допустима любая вложенность блоков
+       __
+       Элменты в Дом дереве могут иметь любую вложенность (можно вкладывать элементы в элементы)
+       Но в Бэм дереве элементы не могут быть вложенны в элементы
+       (у всех элементов родитель блок, независимо от вложенности в html)
+       --
+       блок__элемент--модификатор миксин (header__menu menu)
+   //-->
+   <div class="page">
     <header class="header">
-      <h1 class="welcome-title">Ура! Webpack работает!</h1>
-      <img src="./img/8489677c51328e6c8856f189698fa08b.jpg" alt="">
+         <div class="header__container">
+            <div class="header__flex-box">
+                <div class="menu header-item header-item--padding-right">
+                    <button class="menu-btn menu-item"></button>
+                </div>
+                <div class="logo header-item  header-item--padding-right">
+                    <a href="#"><img alt="logo" src="./img/content/logo.svg"></a>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="header__flex-box">
+                <div class="submit menu-item header-item--padding-right">
+                    <button class="menu-item submit-btn"></button>
+                </div>
+                <div class="check-repair-status menu-item header-item--padding-left">
+                    <button class="menu-item check-repair-status-btn"></button>
+                </div>
+            </div>
+         </div>
     </header>
+    <main>
+        <div class="content-header">
+            <h1 class="content-header__title title">Услуги и сервисы</h1>
+        </div>
+        <div class="services-list">
+            <button class="services-list__item">Ремонтируемые устройства</button>
+            <button class="services-list__item">Ремонтируемые бренды</button>
+            <button class="services-list__item">Цены на услуги</button>
+            <button class="services-list__item">Адреса сервисных центров</button>
+            <button class="services-list__item">Специальные цены</button>
+        </div>
+        <div class="reviews">
+            <button class="reviews__btn">Отзывы</button>
+        </div>
+        <div class="content content--flex">
+            <div class="about">
+                <div class="about__about-text">
+                    <div class="about__text-block">
+                        <p class="about__p about__p--margin">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+
+                         <p class="about__p">
+                             Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                    </div>
+                </div>
+                <button class="about__read-more-btn">Читать далее</button>
+            </div>
+            <img class="content-image" src="./img/content/bg.jpg" alt="">
+        </div>
+    </main>
   </div>
 </body>
 </html>
