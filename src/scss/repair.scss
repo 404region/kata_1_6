@@ -1,0 +1,109 @@
+.repair_block {
+    font-family: 'TT Lakes';
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #7E7E82;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    min-height: 230px;
+    padding-bottom: 14px;
+}
+.repair_block__header {
+    padding: 16px 15px 0px 16px;
+}
+.repair_block__title {
+    min-height: 80px;
+}
+.repair_block__slider {
+    padding-left: 16px;
+    position: relative;
+}
+.brand-btn {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0 16px 0 16px;
+    width: 240px;
+    min-height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-btn:after {
+    content: '';
+    background: url("../img/images/dropdown.svg") no-repeat center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: #FF3E79 solid 2px;
+}
+.swiper-pagination-bullet-active{
+    background-color: #979797;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-container {
+    padding-bottom: 50px;
+}
+.swiper-pagination {
+    bottom: 176px;
+}
+.repair_block__list {
+    display: none;
+    overflow: hidden;
+}
+.repair_block__toggle-button {
+    display: none;
+    background: url("../img/images/expand.svg") no-repeat 24px 0px;
+    padding-left: 57px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+@media (min-width: 768px) {
+    .repair_block__slider {
+        display: none;
+    }
+    .repair_block__list {
+        display: flex;
+        padding: 24px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 1rem 1.5rem;
+        height: 200px;
+    }
+    .brand-btn {
+        width: 224px;
+    }
+    .repair_block__title {
+        min-height: 16px;
+    }
+    .repair_block__header {
+        padding-top: 16px;
+        padding-left: 24px;
+    }
+    .repair_block__toggle-button {
+        display: block;
+    }
+}
+
+.swiper-slide {
+    width:auto;
+}
+
+
+@media (min-width: 1120px) {
+    .repair_block__list {
+        gap: 1rem 2rem;
+    }
+    .brand-btn {
+        width: 240px;
+    }
+}
