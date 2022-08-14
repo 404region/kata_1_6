@@ -89,9 +89,18 @@ body {
   padding: 24px 12px;
   background: url("../img/images/highlight.svg") no-repeat 0 16px;
 }
+
 .title {
-  /* в фигме 28px шрифт - в браузере 16px значит 28/16 = нужное нам значение 1.75 em */
-  font-size: 1.75em;
+  font-family: 'TT Lakes';
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #7E7E82;
+}
+.block-header {
+  padding: 16px 15px 0px 16px;
 }
 .services-list {
   display: flex;
@@ -205,3 +214,6 @@ body {
   }
 }
 
+.repair-types__slide-item {
+  
+}
