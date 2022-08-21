@@ -11,6 +11,7 @@ window.addEventListener('resize', function(event) {
 
 if(window.innerWidth <= '768') {
     addSwiper();
+    addSwiperRepairTypes();
 }
 
 function addSwiper() {
@@ -28,6 +29,30 @@ function addSwiper() {
         grabCursor: true,
         mousewheel: {
             sensitivity: 1,
+        },
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+            pageUpDown: true,
+        }
+    });
+}
+
+function addSwiperRepairTypes() {
+    const slider =  document.querySelector('.swiper-container-2');
+    console.log('slider', slider);
+
+    const swiper = new Swiper(slider, {
+        slidesPerView: 'auto',
+        spaceBetween: 32,
+        grabCursor: true,
+        mousewheel: {
+            sensitivity: 1,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
         },
         keyboard: {
             enabled: true,

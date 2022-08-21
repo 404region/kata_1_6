@@ -5,6 +5,7 @@
 @import "settings";
 @import "reset";
 @import "repair";
+@import "repair-types";
 /*
 Пример - убрать потом
 .header {
@@ -20,6 +21,16 @@
 }
 */
 /* Мои стили */
+
+.content-header__title {
+  font-family: 'TT Lakes Bold';
+
+  font-size: 28px;
+  line-height: 40px;
+  /* identical to box height, or 143% */
+
+  letter-spacing: -0.6px;
+}
 button {
   border: none;
   font: inherit;
@@ -38,22 +49,25 @@ body {
 }
 .header {
   background-color: #fff;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    /*justify-content: space-around;*/
+    justify-content: space-between;
+    min-height: 88px;
+    margin-right: 16px;
+  }
+
+  &__flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
-.header__container {
-  display: flex;
-  align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
-  /*justify-content: space-around;*/
-  justify-content: space-between;
-  min-height: 88px;
-  margin-right: 16px;
-}
-.header__flex-box {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
+
 .header-item--padding-right {
   padding-right: 16px;
 }
@@ -89,15 +103,25 @@ body {
   padding: 24px 12px;
   background: url("../img/images/highlight.svg") no-repeat 0 16px;
 }
-
-.title {
-  font-family: 'TT Lakes';
+.block-title {
+  font-family: 'TT Lakes Regular';
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: -0.2px;
   text-transform: uppercase;
   font-weight: 400;
   color: #7E7E82;
+}
+.block-title--background {
+  background: linear-gradient(270deg, #FFFFFF 98.61%, #F8F8F8 0%);
+  //transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.content-header__title {
+  font-size: 28px;
+  line-height: 40px;
+  /* identical to box height, or 143% */
+  letter-spacing: -0.6px;
+  color: #1B1C21;
 }
 .block-header {
   padding: 16px 15px 0px 16px;
@@ -108,20 +132,22 @@ body {
   overflow-x: auto;
   white-space: nowrap;
   padding-left: 16px;
-}
-.services-list__item {
-  flex: 0 0 auto;
-  font-size: 1em;
-  color: #7E7E82;
-  padding: 8px 9px 8px 16px;
-  line-height: 1.5em;
-  letter-spacing: 0.2px;
 
-  /* Фича=) бордер в цвет фона, чтобы не было скачка размеров элемента при наведении.
-  Я думала с этим справиться box-sizing: border-box, но почему то нет*/
-  border: 2px solid #F8F8F8;
-  border-radius: 6px;
+  &__item {
+    flex: 0 0 auto;
+    font-size: 1em;
+    color: #7E7E82;
+    padding: 8px 9px 8px 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.2px;
+  
+    /* Фича=) бордер в цвет фона, чтобы не было скачка размеров элемента при наведении.
+    Я думала с этим справиться box-sizing: border-box, но почему то нет*/
+    border: 2px solid #F8F8F8;
+    border-radius: 6px;
+  }
 }
+
 .services-list__item:hover {
   border: 2px solid #B8FFEC;
   border-radius: 6px;
@@ -214,6 +240,25 @@ body {
   }
 }
 
-.repair-types__slide-item {
-  
+/*
+.brand-btn {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0 16px 0 16px;
+    width: 240px;
+    min-height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.brand-btn:after {
+    content: '';
+    background: url("../img/images/dropdown.svg") no-repeat center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: #FF3E79 solid 2px;
+}
+*/
