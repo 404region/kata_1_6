@@ -7,6 +7,9 @@
 @import "repair";
 @import "repair-types";
 @import "prices";
+@import "about_prices";
+@import "footer";
+
 /*
 Пример - убрать потом
 .header {
@@ -22,7 +25,11 @@
 }
 */
 /* Мои стили */
-
+.content {
+  @media (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+}
 .content-header__title {
   font-family: 'TT Lakes Bold';
 
@@ -101,14 +108,15 @@ body {
   background: url("../img/images/repair.svg");
 }
 .content-header {
-  padding: 24px 12px;
+  padding: 18px 18px;
   background: url("../img/images/highlight.svg") no-repeat 0 16px;
 }
-
+.block-header {
+}
 .block-header__container {
 }
 .block-header--background {
-  background: linear-gradient(270deg, #FFFFFF 100%, #F8F8F8 0%);
+  background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 100%);
   //transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .block-title {
@@ -119,7 +127,8 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   color: $gray;
-  padding: 16px 15px 0px 16px;
+  padding: 16px 15px 0 16px;
+  min-height: 80px;
 }
 .content-header__title {
   font-size: 28px;
@@ -188,6 +197,19 @@ body {
 }
 .content {
   /* padding: 32px 25px 40px 24px; */
+}
+
+.block-toggle-button {
+  display: none;
+  background: url("../img/images/expand.svg") no-repeat 24px 0px;
+  padding-left: 57px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
 .reviews {
   display: none;

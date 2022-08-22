@@ -2,6 +2,10 @@
     background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
     min-height: 140px;
     padding-bottom: 14px;
+
+    @media (min-width: 768px) {
+        padding-bottom: 53px; 
+    }
 }
 
 .repair_block__title {
@@ -50,24 +54,19 @@
     display: none;
     overflow: hidden;
 }
-.repair_block__toggle-button {
-    display: none;
-    background: url("../img/images/expand.svg") no-repeat 24px 0px;
-    padding-left: 57px;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
 @media (min-width: 768px) {
+    .block-header__container {
+        height: 60px;
+    }
     .repair_block__slider {
         display: none;
     }
     .repair_block__list {
         display: flex;
-        padding: 24px;
+        padding: 24px 20px;
         flex-wrap: wrap;
         justify-content: flex-start;
-        gap: 1rem 1.5rem;
+        gap: 1rem 1.2rem;
         height: 200px;
     }
     .brand-btn {
@@ -76,9 +75,6 @@
     .repair_block__header {
         padding-top: 16px;
         padding-left: 24px;
-    }
-    .repair_block__toggle-button {
-        display: block;
     }
 }
 
@@ -95,5 +91,4 @@
         width: 240px;
     }
 }
-
 

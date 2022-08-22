@@ -11,7 +11,7 @@ window.addEventListener('resize', function(event) {
     }
 }, true);
 
-if(window.innerWidth <= '768') {
+if(window.innerWidth < '768') {
     addSwiper();
     addSwiperRepairTypes();
     addSwiperPrices();
@@ -72,7 +72,7 @@ function addSwiperPrices() {
 
     const swiper = new Swiper(slider, {
         slidesPerView: 'auto',
-        spaceBetween: 32,
+        spaceBetween: 16,
         grabCursor: true,
         mousewheel: {
             sensitivity: 1,

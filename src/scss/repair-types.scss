@@ -4,6 +4,7 @@
 .repair-types {
     padding-bottom: 20px;
     position: relative;
+    padding-top: 16px;
 }
 .repair-types__slide-title {
     font-family: 'TT Lakes';
@@ -25,8 +26,20 @@
     border: 1px solid #EAEAEA;
     border-radius: 6px;
     position: relative;
+
+    @media (min-width: 768px) {
+        cursor: pointer;
+        width: 224px;
+    }  
   }
 
+  .repair-types__wrapper {
+
+    @media (min-width: 768px) {
+        display: flex;
+        gap: 24px;
+    }  
+}
 .repair-types-btn {
 }
 .repair-types-btn:after {
@@ -38,14 +51,15 @@
     border: #FF3E79 solid 2px;
     position: absolute;
     top: 104px;
-    left: 184px;
+    right: 16px;
 }
 
 .repair-types {
-    padding-left: 16px;
     padding-bottom: 52px;
 }
-
+.repair-types__wrapper {
+    padding-left: 16px;
+}
 .repair_types__toggle-button {
     display: none;
     background: url("../img/images/expand.svg") no-repeat 24px 0px;
@@ -55,17 +69,6 @@
     line-height: 1.5rem;
 }
 
-.repair-types__toggle-button {
-    display: none;
-}
 .repair-types__swiper-pagination {
     //top: 100px;
-}
-@media (min-width: 768px) {
-    .repair_types__toggle-button {
-        display: block;
-    }
-    .repair-types__toggle-button {
-        display: block;
-    }
 }
