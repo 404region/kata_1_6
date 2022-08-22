@@ -6,6 +6,7 @@ window.addEventListener('resize', function(event) {
     console.log('resize');
     if(window.innerWidth <= '768') {
         addSwiper();
+        addSwiperRepairTypes();
     }
 }, true);
 

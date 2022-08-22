@@ -1,0 +1,23 @@
+
+.prices {
+    background: var($pink);
+}
+.prices_btn {
+    background: var($pink);
+    border-radius: 16px;
+}
+.prices-grid__row {
+    background-color: white;
+    border-radius: 6px;
+    padding: 16px 16px 20px 16px;
+}
+.prices-grid__cell-header {
+    font-family: 'TT Lakes Medium';
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+    color: #7E7E82;
+
+    mix-blend-mode: normal;
+    opacity: 0.72;
+}
