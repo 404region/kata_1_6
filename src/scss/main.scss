@@ -6,6 +6,7 @@
 @import "reset";
 @import "repair";
 @import "repair-types";
+@import "prices";
 /*
 Пример - убрать потом
 .header {
@@ -117,7 +118,7 @@ body {
   letter-spacing: -0.2px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #7E7E82;
+  color: $gray;
   padding: 16px 15px 0px 16px;
 }
 .content-header__title {
@@ -125,7 +126,7 @@ body {
   line-height: 40px;
   /* identical to box height, or 143% */
   letter-spacing: -0.6px;
-  color: #1B1C21;
+  color:$dark-gray;
 }
 .services-list {
   display: flex;
@@ -137,7 +138,7 @@ body {
   &__item {
     flex: 0 0 auto;
     font-size: 1em;
-    color: #7E7E82;
+    color: $gray;
     padding: 8px 9px 8px 16px;
     line-height: 1.5em;
     letter-spacing: 0.2px;
@@ -169,7 +170,7 @@ body {
 
   font-size: 0.875rem;
   line-height:  1.125rem;
-  color: #1B1C21;
+  color:$dark-gray;
   overflow: hidden;
 }
 .about__read-more-btn {
@@ -197,7 +198,7 @@ body {
   padding-top: 14.35px;
 }
 .reviews__btn {
-  color: #7E7E82;
+  color: $gray;
 }
 /* This applies from 0px to 600px */
 @media (max-width: 768px) {

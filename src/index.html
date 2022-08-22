@@ -207,20 +207,60 @@
         <!-- Prices -->
         <div class="prices">
             <div class="prices-grid">
-                <div class="prices-grid__row">
-                    <div class="prices-grid__cell">
-                        <div class="prices-grid__cell-header">Ремонтные Услуги</div>
-                        <div class="prices-grid__cell-text">Тестирование с выдачей технического заключения</div>
+                <!-- Slider main container -->
+                <div class="swiper-container-prices swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <div class="prices-grid__row swiper-slide">
+                            <div class="prices-grid__cell">
+                                <div class="prices-grid__cell-header">Ремонтные Услуги</div>
+                                <div class="prices-grid__cell-text">Тестирование с выдачей технического заключения</div>
+                            </div>
+                            <div class="prices-grid__cell">
+                                <div class="prices-grid__cell-header">Цена</div>
+                                <div class="prices-grid__cell-text">Бесплатно</div>
+                            </div>
+                            <div class="prices-grid__cell">
+                                <div class="prices-grid__cell-header">Срок</div>
+                                <div class="prices-grid__cell-text">30-120 мин</div>
+                            </div>
+                            <button class="prices-grid__order-btn">Заказать</button>
+                        </div>
+                        <div class="prices-grid__row swiper-slide">
+                            <div class="prices-grid__cell">
+                                <div class="prices-grid__cell-header">Ремонтные Услуги</div>
+                                <div class="prices-grid__cell-text">Замена дисплея</div>
+                            </div>
+                            <div class="prices-grid__cell">
+                                <div class="prices-grid__cell-header">Цена</div>
+                                <div class="prices-grid__cell-text">1000р</div>
+                            </div>
+                            <div class="prices-grid__cell">
+                                <div class="prices-grid__cell-header">Срок</div>
+                                <div class="prices-grid__cell-text">30-120 мин</div>
+                            </div>
+                            <button class="prices-grid__order-btn">Заказать</button>
+                        </div>
+
+                        <div class="prices-grid__row swiper-slide">
+                            <div class="prices-grid__cell">
+                                <div class="prices-grid__cell-header">Ремонтные Услуги</div>
+                                <div class="prices-grid__cell-text">Замена программного обеспечения</div>
+                            </div>
+                            <div class="prices-grid__cell">
+                                <div class="prices-grid__cell-header">Цена</div>
+                                <div class="prices-grid__cell-text">1000р</div>
+                            </div>
+                            <div class="prices-grid__cell">
+                                <div class="prices-grid__cell-header">Срок</div>
+                                <div class="prices-grid__cell-text">30-120 мин</div>
+                            </div>
+                            <button class="prices-grid__order-btn">Заказать</button>
+                        </div>
                     </div>
-                    <div class="prices-grid__cell">
-                        <div class="prices-grid__cell-header">Цена</div>
-                        <div class="prices-grid__cell-text">Бесплатно</div>
-                    </div>
-                    <div class="prices-grid__cell">
-                        <div class="prices-grid__cell-header">Срок</div>
-                        <div class="prices-grid__cell-text">30-120 мин</div>
-                    </div>
-                    <button class="prices-grid__order-btn">Заказать</button>
+                    <!-- If we need pagination -->
+                    <div class="prices-grid__slider-pagination swiper-pagination"></div>
                 </div>
             </div>  
         </div>

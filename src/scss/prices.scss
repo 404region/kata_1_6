@@ -1,23 +1,50 @@
 
 .prices {
-    background: var($pink);
+    padding-bottom: 44px;
+    padding-left: 8px;
+    padding-top: 16px;
 }
-.prices_btn {
-    background: var($pink);
+.prices-grid__order-btn {
+    background-color: $pink;
     border-radius: 16px;
+    color: $white;
 }
 .prices-grid__row {
-    background-color: white;
+    background-color: $white;
     border-radius: 6px;
+    /* Наверное эти стили нужно будет переопределять исходя из размера окна
+    и выносить в медиа запросы
+     */
+    position: relative;
+    width: 260px;
+    display: grid;
+    gap: 16px;
     padding: 16px 16px 20px 16px;
+    height: 200px;
 }
 .prices-grid__cell-header {
     font-family: 'TT Lakes Medium';
     font-size: 14px;
     line-height: 16px;
     /* identical to box height, or 114% */
-    color: #7E7E82;
+    color: $gray;
 
     mix-blend-mode: normal;
     opacity: 0.72;
+    padding-bottom: 4px;
+}
+.prices-grid__cell-text {
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+
+    letter-spacing: 0.2px;
+    color: $dark-gray;
+}
+
+.prices-grid__slider-pagination {
+    top: 250px;
+}
+.swiper-container-prices {
+    position: relative;
 }

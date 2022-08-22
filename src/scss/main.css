@@ -29,7 +29,7 @@ body {
   overflow-anchor: none;
   margin: 0;
   font-family: "Barlow", sans-serif;
-  color: #1B1C21;
+  color:$dark-gray;
   background-color: $background;
   scroll-behavior: smooth;
 }
@@ -81,7 +81,7 @@ textarea:focus {
 }
 
 footer {
-  background: #1B1C21;
+  background:$dark-gray;
 }
 
 .is--hidden {
