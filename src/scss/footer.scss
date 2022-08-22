@@ -1,6 +1,7 @@
 
 .footer {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     text-align: center;
     color: $gray;
@@ -8,4 +9,14 @@
     opacity: 0.72;
     font-size: 14px;
     padding-bottom: 19px;
+
+    @media (min-width: 320px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
