@@ -10,6 +10,8 @@
 */
 //Состояние
 let menuOpenState = false;
+let bigScreen = false;
+
 
 const menuBtn =  document.querySelector('.menu-btn');
 const menuBlock = document.querySelector('.aside');
@@ -42,4 +44,19 @@ function openMenuFunc() {
     }
     //изменить состояние
     menuOpenState = !menuOpenState;
+}
+
+window.addEventListener('resize', function(event) {
+    console.log('resize');
+    if(window.innerWidth >= '1440') {
+        bigScreen = true;
+        //вызвать функцию - отобразить меню слева
+    } else {
+        bigScreen = false;
+        //вызвать функцию - скрыть меню слева
+    }
+}, true);
+
+function showLeftAside() {
+    
 }

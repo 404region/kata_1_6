@@ -12,6 +12,7 @@
 @import "aside";
 @import "modal";
 @import "header";
+@import "page";
 
 /*
 Пример - убрать потом
@@ -28,6 +29,13 @@
 }
 */
 /* Мои стили */
+.main {
+
+  @media (min-width: 1336px){
+    display: block;
+    padding-top: 100px;
+  }
+}
 .content {
   @media (min-width: 768px) {
     padding-bottom: 32px;

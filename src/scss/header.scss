@@ -2,4 +2,18 @@
     position: absolute;
     width: 100%;
     z-index: 99;
+
+    @media (min-width: 1336px) {
+        width: 20%;
+    }
+}
+.menu {
+    @media (min-width: 1336px) {
+        display: none;
+    }
+}
+.submit-block-btns {
+    @media (min-width: 1336px) {
+        display: none;
+    }
 }
