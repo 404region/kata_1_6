@@ -33,7 +33,6 @@
 
   @media (min-width: 1336px){
     display: block;
-    padding-top: 100px;
   }
 }
 .content {
@@ -63,39 +62,8 @@ body {
   overflow-x: hidden;
   background-color: #F8F8F8;
 }
-.page {
-  font-family: 'TT Lakes Regular';
-}
-.header {
-  background-color: #fff;
 
-  &__container {
-    display: flex;
-    align-items: center;
-    padding-left: 16px;
-    padding-right: 16px;
-    /*justify-content: space-around;*/
-    justify-content: space-between;
-    min-height: 88px;
-    margin-right: 16px;
-  }
 
-  &__flex-box {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-
-.header-item--padding-right {
-  padding-right: 16px;
-}
-.header-item--padding-left {
-  padding-left: 16px;
-}
-.header-item--padding-left-big {
-  padding-left: 16px;
-}
 .line {
   width: 2px;
   height: 32px;

@@ -4,9 +4,46 @@
     z-index: 99;
 
     @media (min-width: 1336px) {
-        width: 20%;
+        width: 17%;
     }
 }
+
+.header {
+    background-color: #fff;
+  
+    &__container {
+      display: flex;
+      align-items: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      /*justify-content: space-around;*/
+      justify-content: space-between;
+      min-height: 88px;
+      margin-right: 16px;
+
+      /*@media(min-width: 1336px) {
+        display: block;
+        text-align: center;
+      }*/
+    }
+  
+    &__flex-box {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+.header-item--padding-right {
+    padding-right: 16px;
+  }
+  .header-item--padding-left {
+    padding-left: 16px;
+  }
+  .header-item--padding-left-big {
+    padding-left: 16px;
+  }
+
 .menu {
     @media (min-width: 1336px) {
         display: none;
@@ -14,6 +51,8 @@
 }
 .submit-block-btns {
     @media (min-width: 1336px) {
-        display: none;
+        display: flex;
+        position: absolute;
+        right: -475%;
     }
 }
