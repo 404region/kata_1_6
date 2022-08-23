@@ -9,6 +9,9 @@
 @import "prices";
 @import "about_prices";
 @import "footer";
+@import "aside";
+@import "modal";
+@import "header";
 
 /*
 Пример - убрать потом
@@ -96,7 +99,13 @@ body {
   width: 40px;
 }
 .menu-btn {
+}
+.menu-btn--state-open {
   background: url("../img/images/menu.svg");
+}
+.menu-btn--state-close {
+  border-radius: 100%;
+  background: url("../img/images/close.svg") center center no-repeat $pink;
 }
 .check-repair-status-btn {
   background: url("../img/images/status.svg");

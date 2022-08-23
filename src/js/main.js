@@ -1,4 +1,5 @@
 import '../js/repair.js';
+import '../js/menu.js';
 import '../js/repair-types.js';
 import '../js/slider.js';
 import '../js/toggle-btn.js';

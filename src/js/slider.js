@@ -116,7 +116,6 @@ function deleteSwiperClasses(swiperClassesArr) {
         if(typeof(findDivsArr) === 'Array') {
             findDivsArr.map(findedDiv => {
                 findedDiv.classList.remove(item.delete);
-                console.log('findedDiv',findedDiv)
             });
         } else {
             let findedDiv = findDivsArr;
