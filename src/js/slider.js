@@ -13,7 +13,6 @@ let swiperClassesArr = [
 
 
 window.addEventListener('resize', function(event) {
-    console.log('resize');
     if(window.innerWidth < '768') {
         addSwiper();
         addSwiperRepairTypes();
@@ -35,7 +34,6 @@ if(window.innerWidth < '768') {
 
 function addSwiper() {
     const slider =  document.querySelector('.swiper-container');
-    console.log('slider', slider);
 
     const swiper = new Swiper(slider, {
         slidesPerView: 'auto',
@@ -59,7 +57,6 @@ function addSwiper() {
 
 function addSwiperRepairTypes() {
     const slider =  document.querySelector('.swiper-container-2');
-    console.log('slider', slider);
 
     const swiper = new Swiper(slider, {
         slidesPerView: 'auto',
@@ -84,7 +81,6 @@ function addSwiperRepairTypes() {
 //prices
 function addSwiperPrices() {
     const slider =  document.querySelector('.swiper-container-prices');
-    console.log('slider', slider);
 
     const swiper = new Swiper(slider, {
         slidesPerView: 'auto',
@@ -108,11 +104,8 @@ function addSwiperPrices() {
 
 function deleteSwiperClasses(swiperClassesArr) {
     swiperClassesArr.map(item => {
-        console.log('item.find', item.find);
         let findDivsArr = document.querySelector(item.find) || [];
 
-
-        console.log('findDivsArr', findDivsArr);
         if(typeof(findDivsArr) === 'Array') {
             findDivsArr.map(findedDiv => {
                 findedDiv.classList.remove(item.delete);
@@ -126,15 +119,11 @@ function deleteSwiperClasses(swiperClassesArr) {
 
 function addSwiperClasses(swiperClassesArr) {
     swiperClassesArr.map(item => {
-        console.log('item.find', item.find);
         let findDivsArr = document.querySelector(item.find) || [];
 
-
-        console.log('findDivsArr', findDivsArr);
         if(typeof(findDivsArr) === 'Array') {
             findDivsArr.map(findedDiv => {
                 findedDiv.classList.add(item.delete);
-                console.log('findedDiv',findedDiv)
             });
         } else {
             let findedDiv = findDivsArr;

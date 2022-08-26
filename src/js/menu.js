@@ -18,7 +18,6 @@ const menuBlock = document.querySelector('.aside');
 const modalBackground = document.querySelector('.modal');
 
 menuBtn.addEventListener('click', function(event) {
-    console.log('menuOpenState', menuOpenState);
     //вызвать функцию сделать хорошо
     openMenuFunc();
 });
@@ -47,7 +46,6 @@ function openMenuFunc() {
 }
 
 window.addEventListener('resize', function(event) {
-    console.log('resize');
     if(window.innerWidth >= '1440') {
         bigScreen = true;
         //вызвать функцию - отобразить меню слева

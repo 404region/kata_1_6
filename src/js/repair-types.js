@@ -5,7 +5,6 @@ function ready() {
     let repair_types_block__toggleButton = document.querySelector('.repair-types__toggle-button');
 
     repair_types_block__toggleButton.addEventListener( "click" , () => {
-        console.log('repair_types_block__toggleButton',repair_types_block__toggleButton);
         let repair_types_block__list = document.querySelector('.repair-types__wrapper');
 
         if(repair_types_block__toggle) {

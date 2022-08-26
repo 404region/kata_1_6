@@ -21,6 +21,27 @@
        --
        блок__элемент--модификатор миксин (header__menu menu)
    //-->
+
+       
+    <!--  Модальные окна  -->
+    <div class="modal-window modal-window--submit modal-window--inactive">
+        <div class="model-window__container">
+            <button class="model-window__close-btn menu-item"></button>
+            <div class=modal-window__header>
+                Обратная связь
+            </div>
+
+            <form class=modal-window__form>
+                <input class="modal_window__input" placeholder="Имя" type="text">
+                <input class="modal_window__input" placeholder="Телефон" type="phone">
+                <input class="modal_window__input" placeholder="Электронная почта" type="mail">
+                <textarea class="modal_window__input modal_window__text-area" type="mail" placeholder="Сообщение"></textarea>
+                <div class="modal_window__description">Нажимая “отправить”, вы даете согласие на <a class="modal-window__link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="modal-window__link" href="#">политикой конфиденциальности</a></div>
+                <button class="modal_window__submit-btn" type="Submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
    <div class="page">
     <div class="modal"></div>
     <header class="header header--menu-open">
@@ -403,6 +424,7 @@
             </div>
         </footer>
     </main>
+
   </div>
 </body>
 </html>
