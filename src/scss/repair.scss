@@ -15,8 +15,8 @@
     position: relative;
 }
 .brand-btn {
-    background: #FFFFFF;
-    border: 1px solid #EAEAEA;
+    background: $white;
+    border: 1px solid $background-light;
     box-sizing: border-box;
     border-radius: 6px;
     padding: 0 16px 0 16px;
@@ -32,10 +32,10 @@
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    border: #FF3E79 solid 2px;
+    border: $pink solid 2px;
 }
 .swiper-pagination-bullet-active{
-    background-color: #979797;
+    background-color: $gray-gray;
 }
 
 .swiper-pagination-bullet {

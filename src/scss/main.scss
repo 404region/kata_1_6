@@ -61,14 +61,14 @@ button {
 body {
   min-width: 320px;
   overflow-x: hidden;
-  background-color: #F8F8F8;
+  background-color: $background;
 }
 
 
 .line {
   width: 2px;
   height: 32px;
-  background: #EAEAEA;
+  background: $background-light;
   border-radius: 1px;
 }
 .menu-item {
@@ -102,7 +102,7 @@ body {
 .block-header__container {
 }
 .block-header--background {
-  background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 100%);
+  background: linear-gradient(270deg, $white 0%, $background 100%);
   //transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .block-title {
@@ -140,43 +140,47 @@ body {
   
     /* Фича=) бордер в цвет фона, чтобы не было скачка размеров элемента при наведении.
     Я думала с этим справиться box-sizing: border-box, но почему то нет*/
-    border: 2px solid #F8F8F8;
+    border: 2px solid $background;
     border-radius: 6px;
   }
 }
 
 .services-list__item:hover {
-  border: 2px solid #B8FFEC;
+  border: 2px solid $blue-light;
   border-radius: 6px;
-  background-color: #fff;
+  background-color: $white;
 }
 .about {
  /* padding: 24px 16px 16px 16px;*/
   letter-spacing: 0.2px;
   padding: 24px 16px 0 16px;
-}
-.about__about-text {
-  /* Вроде я правильно посчитала размеры - почему шрифт не как на макете? */
-  /*
-  font-size: 0.875em;
-  line-height:  1.125em;
-  ладно, укажем в rem....
-  */
 
-  font-size: 0.875rem;
-  line-height:  1.125rem;
-  color:$dark-gray;
-  overflow: hidden;
+  &__about-text {
+    /* Вроде я правильно посчитала размеры - почему шрифт не как на макете? */
+    /*
+    font-size: 0.875em;
+    line-height:  1.125em;
+    ладно, укажем в rem....
+    */
+  
+    font-size: 0.875rem;
+    line-height:  1.125rem;
+    color:$dark-gray;
+    overflow: hidden;
+  }
+
+  &__read-more-btn {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background: url("../img/images/expand.svg") no-repeat 0 14px;
+    padding: 16px 0 0 32px;
+  }
+  
+  &__p--margin {
+    margin-bottom: 1.5rem;
+  }
 }
-.about__read-more-btn {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  background: url("../img/images/expand.svg") no-repeat 0 14px;
-  padding: 16px 0 0 32px;
-}
-.about__p--margin {
-  margin-bottom: 1.5rem;
-}
+
 .content-image {
   padding-top: 16px;
   width: 320px;
@@ -249,26 +253,3 @@ body {
       width: 531.35px;
   }
 }
-
-/*
-.brand-btn {
-    background: #FFFFFF;
-    border: 1px solid #EAEAEA;
-    box-sizing: border-box;
-    border-radius: 6px;
-    padding: 0 16px 0 16px;
-    width: 240px;
-    min-height: 72px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.brand-btn:after {
-    content: '';
-    background: url("../img/images/dropdown.svg") no-repeat center;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    border: #FF3E79 solid 2px;
-}
-*/

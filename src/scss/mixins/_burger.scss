@@ -2,7 +2,7 @@
 	width: var(--burger-width);
 	height: var(--burger-height);
 	position: relative;
-	color: #000;
+	color: $black;
 
 	&__line {
 		position: absolute;
