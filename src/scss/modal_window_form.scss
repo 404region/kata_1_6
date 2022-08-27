@@ -8,27 +8,31 @@
     color: $light-gray;
     padding-bottom: 75px;
 
-}
 
-.modal-window--active {
-    display: block;
-}
+    &--active {
+        display: block;
+    }
 
-.modal-window--inactive {
-    display: none;
-}
+    &--inactive {
+        display: none;
+    }
 
-.modal-window__form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    @media (min-width: 320px)  and (max-width: 767px){
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        @media (min-width: 320px)  and (max-width: 767px){
+        }
+    }
+    
+    &__container {
+        padding: 24px 16px 75px 16px;
     }
 }
 
-.model-window__container {
-    padding: 24px 16px 75px 16px;
-}
+
+
+.modal-window
 .modal-window__header {
     padding-top: 40px;
     padding-bottom: 24px;
@@ -37,7 +41,7 @@
     color: $dark-gray;
 }
 
-.model-window__close-btn {
+.modal-window__close-btn {
     display: block;
     border-radius: 100%;
     background: url("../img/images/close.svg") center center no-repeat $pink;

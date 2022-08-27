@@ -69,7 +69,7 @@ submitBtnsBlock.addEventListener('click', (event) => {
 
 modalWindows.map((modalWindow) => {
     modalWindow.addEventListener('click', (event) => {
-        if(event?.target?.classList.contains('model-window__close-btn')) {
+        if(event?.target?.classList.contains('modal-window__close-btn')) {
             modalWindow.classList.remove('modal-window--active');
             modalWindow.classList.add('modal-window--inactive');
             modalBackground.classList.remove('modal-active');

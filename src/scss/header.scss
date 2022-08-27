@@ -41,12 +41,11 @@
   &-item--padding-left {
     padding-left: 16px;
   }
-}
 
-
-  .header-item--padding-left-big {
+  &-item--padding-left-big {
     padding-left: 16px;
   }
+}
 
 .menu {
     @media (min-width: 1336px) {
