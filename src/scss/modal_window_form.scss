@@ -28,59 +28,56 @@
     &__container {
         padding: 24px 16px 75px 16px;
     }
+
+    &__header {
+        padding-top: 40px;
+        padding-bottom: 24px;
+        font-size: 24px;
+        font-family: 'TT Lakes Bold';
+        color: $dark-gray;
+    }
+
+    &__close-btn {
+        display: block;
+        border-radius: 100%;
+        background: url("../img/images/close.svg") center center no-repeat $pink;
+    }
+
+    &__input {
+        border: 1px solid $background-light;
+        border-radius: 8px;
+        width: 100%;
+        height: 48px;
+        color: $light-gray;
+        font-size: 16px;
+        font-family: 'TT Lakes Regular';
+        padding: 12px 16px;
+    }
+
+    &__input::placeholder {
+        color: $light-gray;
+    }
+
+    &__text-area {
+        min-height: 118px;
+    }
+
+    &__description {
+        font-size: 14px;
+    }
+
+    &__link {
+        color: $pink;
+    }
+
+    &__submit-btn {
+        border-radius: 16px;
+        background-color: $pink;
+        width: 132px;
+        height: 32px;
+        position: absolute;
+        right: 16px;
+        bottom: 75px;
+        color: $white;
+    }
 }
-
-
-
-.modal-window
-.modal-window__header {
-    padding-top: 40px;
-    padding-bottom: 24px;
-    font-size: 24px;
-    font-family: 'TT Lakes Bold';
-    color: $dark-gray;
-}
-
-.modal-window__close-btn {
-    display: block;
-    border-radius: 100%;
-    background: url("../img/images/close.svg") center center no-repeat $pink;
-}
-
-.modal_window__input {
-    border: 1px solid $background-light;
-    border-radius: 8px;
-    width: 100%;
-    height: 48px;
-    color: $light-gray;
-    font-size: 16px;
-    font-family: 'TT Lakes Regular';
-    padding: 12px 16px;
-}
-
-.modal_window__input::placeholder {
-    color: $light-gray;
-}
-
-.modal_window__text-area {
-    min-height: 118px;
-}
-
-.modal_window__description {
-    font-size: 14px;
-}
-
-.modal-window__link {
-    color: $pink;
-}
-.modal_window__submit-btn {
-    border-radius: 16px;
-    background-color: $pink;
-    width: 132px;
-    height: 32px;
-    position: absolute;
-    right: 16px;
-    bottom: 75px;
-    color: $white;
-}
-
