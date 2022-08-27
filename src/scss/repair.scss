@@ -5,15 +5,26 @@
     @media (min-width: 768px) {
         padding-bottom: 53px; 
     }
+
+    &__title {
+        padding-bottom: 24px;
+    }
+
+    &__slider {
+        padding-left: 16px;
+        position: relative;
+    }
+
+    &__list {
+        display: none;
+        overflow: hidden;
+    }
+
+    &__swiper-pagination {
+        bottom: 176px;
+    }
 }
 
-.repair_block__title {
-   padding-bottom: 24px;
-}
-.repair_block__slider {
-    padding-left: 16px;
-    position: relative;
-}
 .brand-btn {
     background: $white;
     border: 1px solid $background-light;
@@ -46,13 +57,8 @@
 .swiper-container {
     padding-bottom: 50px;
 }
-.repair_block__swiper-pagination {
-    bottom: 176px;
-}
-.repair_block__list {
-    display: none;
-    overflow: hidden;
-}
+
+
 @media (min-width: 768px) {
     .block-header__container {
         height: 60px;
